@@ -1,4 +1,4 @@
-package com.app.polls.pollsapp.com.app.polls.pollsapp.model;
+package com.app.polls.pollsapp.model;
 
 import org.hibernate.annotations.NaturalId;
 

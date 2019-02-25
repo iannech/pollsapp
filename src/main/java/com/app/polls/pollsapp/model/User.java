@@ -1,6 +1,6 @@
-package com.app.polls.pollsapp.com.app.polls.pollsapp.model;
+package com.app.polls.pollsapp.model;
 
-import com.app.polls.pollsapp.com.app.polls.pollsapp.model.audit.DateAudit;
+import com.app.polls.pollsapp.model.audit.DateAudit;
 import org.hibernate.annotations.NaturalId;
 
 import javax.persistence.*;
@@ -40,7 +40,7 @@ public class User extends DateAudit {
     private String email;
 
     @NotBlank
-    @Size(max = 40)
+    @Size(max = 100)
     private String password;
 
     @ManyToMany(fetch = FetchType.LAZY)
@@ -53,8 +53,7 @@ public class User extends DateAudit {
 
     }
 
-    public User(@NotBlank @Size(max = 40) String name, @NotBlank @Size(max = 15) String username,
-                @NotBlank @Size(max = 40) @Email String email, @NotBlank @Size(max = 40) String password) {
+    public User(String name, String username, String email, String password) {
         this.name = name;
         this.username = username;
         this.email = email;

@@ -1,11 +1,11 @@
 package com.app.polls.pollsapp.payload;
 
-public class JwtAuthenticationReponse {
+public class JwtAuthenticationResponse {
 
     private String accessToken;
     private String tokenType;
 
-    public JwtAuthenticationReponse(String accessToken) {
+    public JwtAuthenticationResponse(String accessToken) {
         this.accessToken = accessToken;
     }
 

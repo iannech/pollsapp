@@ -1,6 +1,6 @@
 package com.app.polls.pollsapp.security;
 
-import com.app.polls.pollsapp.com.app.polls.pollsapp.model.User;
+import com.app.polls.pollsapp.model.User;
 import com.app.polls.pollsapp.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
