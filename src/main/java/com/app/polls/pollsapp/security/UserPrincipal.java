@@ -62,6 +62,10 @@ public class UserPrincipal implements UserDetails {
         return authorities;
     }
 
+    public String getName() {
+        return name;
+    }
+
     @Override
     public String getPassword() {
         return password;
